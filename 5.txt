@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class exercicio05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o primeiro número
+        System.out.print("Digite o primeiro número: ");
+        int numA = scanner.nextInt();
+
+        // Solicita o segundo número
+        System.out.print("Digite o segundo número: ");
+        int numB = scanner.nextInt();
+
+        // Verifica se os números são iguais ou diferentes
+        if (numA == numB) {
+            System.out.println("Os números são iguais.");
+        } else {
+            System.out.println("Os números são diferentes.");
+
+            // Determina o maior e o menor número
+            int maior = (numA > numB) ? numA : numB;
+            int menor = (numA < numB) ? numA : numB;
+
+            // Exibe o maior e o menor número
+            System.out.println("Maior número: " + maior);
+            System.out.println("Menor número: " + menor);
+        }
+
+        scanner.close();
+    }
+}
